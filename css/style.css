@@ -1,3 +1,76 @@
-.box{
+html{
+  height: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.content{
+  height: 100%;
+  width: 100%;
   background: rebeccapurple;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  height: 60px;
+  width: 100%;
+  background: grey;
+}
+.cont {
+  width: 100%;
+  flex-grow: 1;
+  background: floralwhite;
+  display: flex;
+}
+.left {
+  width: 160px;
+  height: 100%;
+  background: goldenrod;
+}
+.right {
+  flex-grow: 1;
+  background-color: skyblue;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.right-top {
+  height: 120px;
+  background: thistle;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.right-bottom {
+  flex-grow: 1;
+  background: rgb(54, 29, 54);
+}
+.right-top .right-nav {
+  background: wheat;
+  height: 100%;
+}
+.right-nav-list {
+  display: flex;
+  height: 100%;
+}
+.right-nav-list li {
+  flex-grow: 1;
+  text-align: center;
+  height: 100%;
+  background: salmon;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.right-nav-list li div {
+  height: 100%;
+  background-color: turquoise;
+  line-height: 100px;
 }

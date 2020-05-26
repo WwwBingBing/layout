@@ -1,14 +1,14 @@
 .slider_bg_1{
-    background-image: url(../img/banner/banner.png);
+    background-image: url(../img/banner/banner.jpg);
 }
 .slider_bg_2{
-    background-image: url(../img/banner/banner2.png);
+    background-image: url(../img/banner/banner2.jpg);
 }
 .slider_area{
     position: relative;
     z-index: 0;
     .single_slider{
-        height: 900px;
+        height: 600px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;

@@ -179,7 +179,7 @@ var MainManager = function() {
               c = n;
               for (var a = [], e = 0; e < o; e++)
                   a[e] = [e + ".mp3"];
-              (r = new WebAudioManager).load("./track.json", a, t, i)
+              (r = new WebAudioManager).load("./js/track.json", a, t, i)
           }(n)
       }
       ,
@@ -246,7 +246,7 @@ var MainManager = function() {
               c = n;
               for (var a = [], e = 0; e < s; e++)
                   a[e] = [e + ".mp3"];
-              (o = new WebAudioManager).load("./main.json", a, t, i)
+              (o = new WebAudioManager).load("./js/main.json", a, t, i)
           }(n)
       }
       ;

@@ -246,7 +246,7 @@ var MainManager = function() {
               c = n;
               for (var a = [], e = 0; e < s; e++)
                   a[e] = [e + ".mp3"];
-              (o = new WebAudioManager).load("data/main/main.json", a, t, i)
+              (o = new WebAudioManager).load("./main.json", a, t, i)
           }(n)
       }
       ;

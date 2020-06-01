@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>点赞特效</title>
+  </head>
+  <link rel="stylesheet" href="./style.css" />
+  <body>
+    <div class="praise_bubble" id="praise_bubble">
+      <div class="bubble b1 bl1"></div>
+    </div>
+    <br />
+  </body>
+  <script>
+    let praiseBubble = document.getElementById("praise_bubble");
+    let last = 0;
+    function addPraise() {
+      const b = Math.floor(Math.random() * 6) + 1;
+      const bl = Math.floor(Math.random() * 11) + 1; // bl1~bl11
+
+      let d = document.createElement("div");
+      d.className = `bubble b${b} bl${bl}`;
+      d.dataset.t = String(Date.now());
+      praiseBubble.appendChild(d);
+    }
+    let timer = setInterval(() => {
+      addPraise();
+    }, 300);
+    setTimeout(() => {
+      clearInterval(timer);
+    }, 5000);
+  </script>
+</html>
